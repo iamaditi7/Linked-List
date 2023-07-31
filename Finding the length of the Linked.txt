@@ -1,0 +1,21 @@
+Finding the length of the Linked List 
+'''
+Following is the structure of the Node class already defined.
+
+class Node:
+    def __init__(self, data):
+        self.data = data
+        self.next = None
+        
+'''
+
+def length(head) :
+    #Your code goes here
+    count = 0
+    n = head
+    while(n!=None):
+        if n.next == -1:
+            break
+        count += 1    
+        n=n.next
+    return count
