@@ -1,0 +1,9 @@
+Search an element in LL
+
+def searchInLinkedList(head, k):
+    # Your code goes here.
+    while (head != None):
+        if head.data == k:
+            return 1
+        head = head.next
+    return 0
