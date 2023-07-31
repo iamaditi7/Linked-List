@@ -1,0 +1,16 @@
+Deleting a Node in Linked List
+class Node:
+    def __init__(self, val=0, next=None):
+        self.val = val
+        self.next = next
+
+
+# Please do not change code above.
+
+
+def deleteLast(list: Node) -> Node:
+    head = list 
+    while head.next.next != None:
+        head = head.next
+    head.next = None
+    return list 
